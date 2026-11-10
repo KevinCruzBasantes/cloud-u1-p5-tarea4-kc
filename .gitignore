@@ -1,0 +1,14 @@
+# Excluir binarios y módulos de Terraform (causa principal del peso elevado)
+.terraform/
+
+# Excluir archivos de estado local (contienen información sensible de la infraestructura)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Excluir variables con secretos o credenciales
+*.tfvars
+*.tfvars.json
+
+# Archivos de log
+*.log
